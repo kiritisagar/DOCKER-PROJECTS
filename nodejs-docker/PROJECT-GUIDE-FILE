@@ -1,0 +1,40 @@
+# REQUIREMENTS
+1.server -1 (ubuntu)
+2.install packages npm,nodejs and docker
+
+Step 1: Install Node.js and npm
+# Update package index
+sudo apt update
+
+# Install Node.js and npm
+sudo apt install nodejs npm
+
+# Check Node.js version
+nodejs -v
+
+# Check npm version
+npm -v
+
+step2: install docker
+#Install Docker Engine
+sudo apt install docker.io
+
+#Verify Docker Installation
+sudo docker --version
+
+#Check Docker Service Status
+sudo systemctl status docker
+
+Step 3: Build the Docker Image
+# Navigate to your Node.js project directory
+cd /nodejs-docker
+
+# Build Docker image
+docker build -t nodeimage .
+
+Step 4: Run the Docker Container
+# Run Docker container
+docker run -d --name nodecontainer -p 5001:5000 nodeimage
+
+step5: Access Your Application
+http://SERVER_IP:5001
