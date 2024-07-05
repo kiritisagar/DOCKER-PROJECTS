@@ -1,0 +1,41 @@
+# REQUIREMENTS:
+1.SERVER-1(ubuntu)
+2.install docker
+
+### steps to execute:
+# step1:
+launch ec2 with t2 micro
+connect to ec2 instance
+sudo apt-get update
+
+# step2:
+1.Install Docker
+(sudo apt-get install docker.io)
+
+2.Start Docker
+sudo systemctl start docker
+
+3.Enable Docker to start at boot
+sudo systemctl enable docker
+
+4.Verify Docker installation
+sudo docker --version
+
+5.check the status of docker
+sudo systemctl status docker
+
+# step3:
+clone the code from git hub
+
+goto nginxweb-with-docker 
+
+ste4:
+Build the Docker Image && Run the Docker Container
+(sudo docker build -t sagar .)
+(sudo docker run -d -p 80:80 sagar)
+
+step5:
+Access the application from your web browser
+1.Ensure your server's firewall allows HTTP traffic(port 80 should be allow)
+2.hit public IP address with 80(publicip:80)
+
