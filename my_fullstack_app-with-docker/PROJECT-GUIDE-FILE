@@ -1,5 +1,6 @@
-Based on your history, let's streamline the commands and focus on the ones that are relevant and necessary for setting up and running your Dockerized application (`my_fullstack_app-with-docker`):
-
+# REQUIREMENTS:
+1.SERVER-1(UBUNTU)
+2.INSTALL git,
 1. **Clone Repository and Navigate to Project Directory:**
    ```bash
    cd
