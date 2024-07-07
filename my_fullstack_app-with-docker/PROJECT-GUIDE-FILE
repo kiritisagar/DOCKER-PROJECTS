@@ -1,0 +1,63 @@
+Based on your history, let's streamline the commands and focus on the ones that are relevant and necessary for setting up and running your Dockerized application (`my_fullstack_app-with-docker`):
+
+1. **Clone Repository and Navigate to Project Directory:**
+   ```bash
+   cd
+   git clone https://github.com/kiritisagar/DOCKER-PROJECTS.git
+   cd DOCKER-PROJECTS/my_fullstack_app-with-docker
+   ```
+
+2. **Install Docker and Docker Compose:**
+   - Install Docker:
+     ```bash
+     sudo apt-get update
+     sudo apt-get install -y docker-ce docker-ce-cli containerd.io
+     ```
+   - Verify Docker installation:
+     ```bash
+     docker --version
+     ```
+   - Install Docker Compose (ensure you have the correct version):
+     ```bash
+     sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+     sudo chmod +x /usr/local/bin/docker-compose
+     ```
+   - Verify Docker Compose installation:
+     ```bash
+     docker-compose --version
+     ```
+
+3. **Build and Start Docker Containers:**
+   - Build Docker containers:
+     ```bash
+     docker-compose build --no-cache
+     ```
+   - Start Docker containers in detached mode:
+     ```bash
+     docker-compose up -d
+     ```
+
+4. **Verify Container Status:**
+   - Check running containers:
+     ```bash
+     docker ps
+     ```
+   - Check Docker Compose service status:
+     ```bash
+     docker-compose ps
+     ```
+
+5. **Troubleshoot Database Container Issues:**
+   - If the database container (`my_fullstack_app-with-docker_db_1`) does not start or exits with an error, check its logs:
+     ```bash
+     docker-compose logs db
+     ```
+   - Investigate the logs to identify any errors during startup.
+
+6. **Ensure `init.sql` File Accessibility:**
+   - Ensure that the `init.sql` file is correctly placed and accessible within the `db` service configuration in your `docker-compose.yml` file. Adjust file permissions if necessary:
+     ```bash
+     chmod 644 ./db/init.sql
+     ```
+
+These steps should help you effectively set up and troubleshoot your Dockerized full-stack application. Adjustments may be needed based on specific errors or issues encountered during the setup process. If you encounter any specific errors or need further assistance, feel free to ask!
