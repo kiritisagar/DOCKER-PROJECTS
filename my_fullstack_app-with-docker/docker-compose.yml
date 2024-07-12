@@ -20,7 +20,7 @@ services:
       - db
 
   db:
-    build: ./db
+    build: ./database
     ports:
       - "3306:3306"
     networks:
