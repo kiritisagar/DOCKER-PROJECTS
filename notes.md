@@ -1,6 +1,12 @@
 # Containers and virtual machines
 
-![image](https://github.com/user-attachments/assets/f73f5a14-79d2-4c47-b72a-01ff02dcb340)
+![image](https://github.com/user-attachments/assets/8017c445-be73-4b8b-8d09-56afa7882f4a)
+
+# VM:
+Virtual Machines are full operating systems running on a physical host, requiring a hypervisor. They are heavier but offer more flexibility and security.
+
+# CONTAINER
+Docker Containers are lightweight, portable, and run on any platform that supports Docker. They share the host OS kernel but can run on top of VMs.
 
 Virtual Machines are slow and take a lot of time to boot.
 Containers are fast and boots quickly as it uses host operating system and shares the relevant libraries.
