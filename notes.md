@@ -29,6 +29,10 @@ When you use commands such as docker run, the client sends these commands to doc
 # The Docker daemon
 The Docker daemon listens for Docker API requests and manages Docker objects such as images, containers, networks, and volumes.
 
+
+![image](https://github.com/user-attachments/assets/b2b1005b-4d9a-4b9f-8546-2fddfb3ad229)
+
+
 # Docker registries
 A Docker registry stores Docker images. Docker Hub is a public registry that anyone can use, and Docker looks for images on Docker Hub by default. 
 You can even run your own private registry. When you use the docker pull or docker run commands, Docker pulls the required images from your configured registry. 
