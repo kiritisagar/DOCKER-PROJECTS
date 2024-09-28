@@ -1,5 +1,8 @@
 A Dockerfile contains several instructions to define how an image should be built. 
 
+
+![image](https://github.com/user-attachments/assets/2dd1e23d-5f29-4530-afaa-a44f1e9dd18a)
+
 Here’s a summary of the most common Dockerfile instructions:
 1. FROM: Sets the base image for the new image.
 2. RUN: Executes commands in a new layer on top of the current image.
