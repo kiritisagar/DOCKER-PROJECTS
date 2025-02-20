@@ -1,0 +1,11 @@
+FROM ubuntu:22.04
+
+RUN apt update && apt install -y apache2
+
+EXPOSE 80
+
+ADD index.html /var/www/html
+
+ENV USER=SK
+
+CMD ["apachectl", "-D", "FOREGROUND"]
